@@ -1,0 +1,55 @@
+/* Style the navbar */
+.navbar {
+  top:0px;
+  position:fixed;
+  width: 100%;
+  /* padding: 10px 16px; */
+  background: var(--dark);
+  color: white;
+  background-size: cover;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.navbar a {
+  background: var(--primary);
+  background-color: transparent;  
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 3em;
+  /* box-shadow: var(--shadow); */
+  margin-top: 125px;
+}
+
+.navbar a:hover {
+  /* background: var(--dark); */
+  color: var(--primary);
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
