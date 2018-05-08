@@ -1,0 +1,51 @@
+    <form action="/action_page.php">
+      <!-- <label for="name">First Name</label> -->
+      <input type="text" id="name" name="name" placeholder="Your name..">
+  
+      <!-- <label for="Company">Company</label> -->
+      <input type="text" id="company" name="company" placeholder="Your company..">
+  
+      <!-- <label for="email">Email</label> -->
+      <input type="email" id="email" name="email" placeholder="Your email..">
+  
+      <!-- <label for="subject">Subject</label> -->
+      <input type="text" id="subject" name="subject" placeholder="Subject..">
+  
+      <!-- <label for="subject">Subject</label> -->
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input class="font-bold" type="submit" value="Send">
+    </form>
+
+
+
+        <form action="takeform.php" method="POST">
+      <p>
+      <input
+        name="email"
+        size="64"
+        maxlength="64"/>
+        <b>Your</b> Email Address
+      </p>
+      <p>
+      <input
+        name="realname"
+        size="64"
+        maxlength="64"/>
+        Your Real Name (<i>so our reply won't get stuck in your spam folder</i>)
+      </p>
+      <p>
+      <input
+        name="subject"
+        size="64"
+        maxlength="64"/>
+        Subject Of Your Message
+      </p>
+      <p><i>Please enter the text of your message in the field that follows.</i></p>
+      <textarea
+        name="body"
+        rows="10"
+        cols="60">
+      </textarea>
+      <p><input type="submit" name="send" value="Send Your Message"/></p>
+    </form> 

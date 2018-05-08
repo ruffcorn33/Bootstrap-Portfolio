@@ -1,11 +1,9 @@
 
 footer {
-  background-color: var(--dark);
-  color:#fff;
-  width: 100%;
-}
-
-footer p {
-  justify-content: center;
-  margin: auto;
+  margin-top: 2rem;
+  background: var(--dark);
+  background-size: cover;
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
 }
